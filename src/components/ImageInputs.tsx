@@ -1,6 +1,8 @@
 import React from "react";
+import { useStore } from "../context/appContext";
 
 export const ImageInputs = () => {
+  const { actions } = useStore();
   return (
     <fieldset>
       <legend className="text-lg pb-4 ">Upload Image</legend>
@@ -13,6 +15,9 @@ export const ImageInputs = () => {
             name="urlImage"
             placeholder="Insert an image url"
             className="p-2"
+            onChange={(event) => {
+              actions?.setSelectedImage(event.target.value);
+            }}
           />
         </label>
         <label className="flex flex-col gap-2 w-full" htmlFor="userImage">

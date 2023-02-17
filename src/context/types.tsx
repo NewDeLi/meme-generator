@@ -1,5 +1,5 @@
 export interface AppState {
-  selectedImage: string | null;
+  selectedImage: { url: string; local: File | null };
   textObject: {
     textTop: string;
     textBottom: string;
@@ -17,7 +17,7 @@ export enum ActionTypes {
 
 export interface SetSelectedImage {
   type: ActionTypes.SET_SELECTED_IMAGE;
-  payload: string;
+  payload: { url: string; local: File | null };
 }
 export interface SetTextObject {
   type: ActionTypes.SET_TEXT_OBJECT;

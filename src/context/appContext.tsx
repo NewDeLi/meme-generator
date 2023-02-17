@@ -9,7 +9,7 @@ interface AppContext {
 }
 
 const initialState: AppState = {
-  selectedImage: null,
+  selectedImage: { url: "", local: null },
   textObject: {
     textTop: "",
     textBottom: "",

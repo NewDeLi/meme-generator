@@ -41,6 +41,7 @@ export const drawImageWithText = ({
         context.drawImage(img, 0, 0, width, height);
 
         //draw text top
+        context.fillStyle = fontColor;
         canvasTxt.font = font;
         canvasTxt.fontWeight = "bold";
         canvasTxt.fontSize = parseInt(fontSizeTop);

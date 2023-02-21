@@ -1,13 +1,13 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useStore } from "../context/appContext";
 import { drawImageWithText } from "../utils/drawImageWithText";
 
-export const CanvasElement = () => {
+export const CanvasElement = ({ canvasRef }: any) => {
   const { state } = useStore();
   const { textTop, textBottom, fontSizeTop, fontSizeBottom, fontColor, font } =
     state.textObject;
   const { url, local } = state.selectedImage;
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+
   useEffect(() => {
     drawImageWithText({
       canvasRef,

@@ -28,6 +28,9 @@ export const drawImageWithText = ({
     const width = canvasRef.current.width;
     const height = canvasRef.current.height;
 
+    const textWidth = canvasRef.current.width - 20;
+    const textHeight = canvasRef.current.height - 10;
+
     //create a new img element to draw it in canvas
     const img = new Image();
     img.src = local ? window.URL.createObjectURL(local) : url;
@@ -43,16 +46,18 @@ export const drawImageWithText = ({
         //draw text top
         context.fillStyle = fontColor;
         canvasTxt.font = font;
+        canvasTxt.fontVariant = "small-caps";
         canvasTxt.fontWeight = "bold";
+        canvasTxt.justify = true;
+        canvasTxt.align = "center";
         canvasTxt.fontSize = parseInt(fontSizeTop);
         canvasTxt.vAlign = "top";
-
-        canvasTxt.drawText(context, textTop, 0, 0, width, height);
+        canvasTxt.drawText(context, textTop, 10, 0, textWidth, textHeight);
 
         //draw text bottom
         canvasTxt.fontSize = parseInt(fontSizeBottom);
         canvasTxt.vAlign = "bottom";
-        canvasTxt.drawText(context, textBottom, 0, 0, width, height);
+        canvasTxt.drawText(context, textBottom, 10, 0, textWidth, textHeight);
       };
     }
   }

@@ -21,5 +21,7 @@ export const CanvasElement = () => {
       url,
     });
   });
-  return <canvas ref={canvasRef} className="w-full h-full"></canvas>;
+  return (
+    <canvas ref={canvasRef} className="w-full h-full min-h-[500px]"></canvas>
+  );
 };

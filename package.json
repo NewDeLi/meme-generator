@@ -12,7 +12,8 @@
     "canvas-txt": "^3.0.0",
     "react": "^18.2.0",
     "react-color": "^2.19.3",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1"
   },
   "devDependencies": {
     "@types/canvas-txt": "^3.0.0",

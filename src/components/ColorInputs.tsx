@@ -1,6 +1,7 @@
 import React from "react";
 import { useStore } from "../context/appContext";
 import { CirclePicker } from "react-color";
+import { FaPalette } from "react-icons/fa";
 
 export const ColorInputs = () => {
   const { state, actions } = useStore();
@@ -33,7 +34,10 @@ export const ColorInputs = () => {
 
   return (
     <fieldset>
-      <legend className="text-lg pb-4 pt-8 ">Choose Color</legend>
+      <legend className="text-lg pb-4 pt-8 flex items-center gap-2">
+        <FaPalette />
+        Choose Color
+      </legend>
       <CirclePicker
         className="min-w-full"
         colors={colorPalette}

@@ -1,11 +1,15 @@
 import React from "react";
 import { useStore } from "../context/appContext";
+import { FaTextHeight } from "react-icons/fa";
 
 export const TextSizeInputs = () => {
   const { state, actions } = useStore();
   return (
     <fieldset>
-      <legend className="text-lg pb-4 pt-8">Choose Text Size</legend>
+      <legend className="text-lg pb-4 pt-8 flex items-center gap-2">
+        <FaTextHeight />
+        Choose Text Size
+      </legend>
       <div className="flex flex-col justify-between gap-4 sm:flex-row">
         <label className="flex flex-col gap-2 w-full" htmlFor="fontSizeTop">
           Font Size Top: {state.textObject.fontSizeTop}

@@ -1,11 +1,11 @@
 import { FormSection } from "./components/FormSection";
-import { GifSection } from "./components/GifSection";
+import { ImageSection } from "./components/ImageSection";
 import { MainLayout } from "./Layout/MainLayout";
 
 function App() {
   return (
     <MainLayout>
-      <GifSection />
+      <ImageSection />
       <FormSection />
     </MainLayout>
   );

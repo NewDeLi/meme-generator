@@ -35,6 +35,7 @@ export const drawImageWithText = ({
     const img = new Image();
     img.src = local ? window.URL.createObjectURL(local) : url;
     img.width = canvasRef.current.width;
+    img.crossOrigin = "anonymous";//fix the download with an img url
 
     if (context) {
       img.onload = () => {

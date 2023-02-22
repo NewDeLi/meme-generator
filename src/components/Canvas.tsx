@@ -22,6 +22,11 @@ export const CanvasElement = ({ canvasRef }: any) => {
     });
   });
   return (
-    <canvas ref={canvasRef} className="w-full h-full min-h-[500px]"></canvas>
+    <canvas
+      ref={canvasRef}
+      width="664"
+      height="980"
+      className="w-full h-full max-w-[498px] max-h-[635px] border-2 border-dotted border-[#666666]"
+    ></canvas>
   );
 };

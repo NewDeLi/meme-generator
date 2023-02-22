@@ -18,9 +18,9 @@ export const TextSizeInputs = () => {
             id="fontSizeTop"
             name="fontSizeTop"
             min="2"
-            max="40"
+            max="1ß0"
             step="2"
-            defaultValue="16"
+            defaultValue="40"
             onChange={(event) =>
               actions?.setTextObject({
                 ...state.textObject,
@@ -36,9 +36,9 @@ export const TextSizeInputs = () => {
             id="fontSizeBottom"
             name="fontSizeBottom"
             min="2"
-            max="40"
+            max="100"
             step="2"
-            defaultValue="16"
+            defaultValue="40"
             onChange={(event) =>
               actions?.setTextObject({
                 ...state.textObject,

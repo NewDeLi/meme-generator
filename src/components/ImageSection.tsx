@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { CanvasElement } from "./Canvas";
 
-export const GifSection = () => {
+export const ImageSection = () => {
   const [selectedValue, setSelectedValue] = useState<string>("png");
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -13,9 +13,9 @@ export const GifSection = () => {
   };
   return (
     <section className="h-full w-full flex justify-center">
-      <div className="flex flex-col w-full p-4 sm:p-8 ">
+      <div className="flex flex-col w-full p-4 sm:p-8 gap-2 items-center">
         <CanvasElement canvasRef={canvasRef} />
-        <span className="grid grid-cols-[15%_85%]">
+        <span className="grid grid-cols-[15%_85%] max-w-[498px] w-full">
           <select
             name="file"
             id="file"
@@ -28,7 +28,7 @@ export const GifSection = () => {
           </select>
           <a
             href="randomTextToFillHref"
-            className="text-white bg-[#3B82F6] p-4 w-full text-center"
+            className="text-white bg-[#3B82F6] p-2  text-center"
             onClick={saveImageLocal}
           >
             Download

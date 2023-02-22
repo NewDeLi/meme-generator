@@ -21,6 +21,7 @@ Name | Begründung
 --- | ---
 [tailwindcss](https://tailwindcss.com/) | CSS-Framework mit utility classes statt vollständig vorgestylter Komponenten zur Gestaltung des Frontends.
 [canvas-txt](https://github.com/geongeorge/Canvas-Txt) | Zur Gestaltung des Textes, der in Canvas gezeichnet wird.
+[react-color](http://casesandberg.github.io/react-color/) | Zum Hinzufügen eines Color-Pickers.
 [react-icons](https://react-icons.github.io/react-icons/) | Zum Hinzufügen von anpassbaren SVG-Icons aus anderen Libaries wie z.B. Font Awesome.
 
 ## Installation / Ausführen des Projektes
@@ -38,3 +39,9 @@ $ cd meme-generator
 $ npm install
 $ npm run dev
 ```
+
+Anschließend öffnen Sie http://localhost:5173/meme-generator.
+
+## Demo
+
+[https://newdeli.github.io/meme-generator/](https://newdeli.github.io/meme-generator/)

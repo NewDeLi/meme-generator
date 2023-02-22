@@ -33,7 +33,7 @@ export const FontInputs = () => {
             type="radio"
             id="comicSans"
             name="font"
-            value="Comic Sans"
+            value="Comic Sans MS"
             onChange={(event) => {
               actions?.setTextObject({
                 ...state.textObject,

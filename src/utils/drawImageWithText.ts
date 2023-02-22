@@ -49,7 +49,6 @@ export const drawImageWithText = ({
         canvasTxt.font = font;
         canvasTxt.fontVariant = "small-caps";
         canvasTxt.fontWeight = "bold";
-        canvasTxt.justify = true;
         canvasTxt.align = "center";
         canvasTxt.fontSize = parseInt(fontSizeTop);
         canvasTxt.vAlign = "top";
